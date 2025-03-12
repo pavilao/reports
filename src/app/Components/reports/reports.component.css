@@ -1,0 +1,110 @@
+/* Contenedor principal de reportes */
+.reports-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  background-color: white;
+  min-height: 80vh;
+  border-radius: 10px;
+}
+
+/* Estilo para cada tarjeta de reporte */
+.report-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del reporte */
+.report-card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #007bff;
+}
+
+/* Título del reporte */
+.report-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* Fecha del reporte */
+.report-card p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 16px;
+  background: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* Botón de Ver Detalles */
+.report-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #007bff;
+  color: white;
+  margin-top: 10px;
+}
+
+.report-card button:hover {
+  background: #0056b3;
+}
+
+/* Mensaje cuando no hay reportes */
+.no-reports {
+  font-size: 18px;
+  color: #777;
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* Estilo para el campo de búsqueda */
+input[type="text"] {
+  width: 90%;
+  max-width: 500px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+/* Cambiar el color del borde al enfocar */
+input[type="text"]:focus {
+  border-color: #0056b3;
+  outline: none; /* Eliminar el contorno predeterminado */
+}
+
+/* Estilo para el contenedor del campo de búsqueda */
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

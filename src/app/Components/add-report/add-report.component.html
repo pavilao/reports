@@ -1,0 +1,19 @@
+<div class="add-report-container">
+  <input type="text" placeholder="Título" [(ngModel)]="title">
+  <input type="text" placeholder="Departamento" [(ngModel)]="departamento">
+  <input type="text" placeholder="Trabajador" [(ngModel)]="author">
+  <textarea placeholder="Descripción" [(ngModel)]="description"></textarea>
+
+  <button (click)="takePicture()">📸 Tomar Foto</button>
+  
+  <!-- Vista previa de la imagen -->
+  <div *ngIf="image" class="image-preview">
+    <p>✅ Foto capturada</p>
+    <img [src]="image" alt="Vista previa de la foto">
+  </div>
+
+  <p *ngIf="date">📅 Fecha: {{ date }}</p>
+
+  <button (click)="addReport()">✅ Añadir Reporte</button>
+  <button (click)="cancel()">🔙 Cancelar</button>
+</div>

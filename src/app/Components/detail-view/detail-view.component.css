@@ -1,0 +1,96 @@
+/* Contenedor principal del detalle */
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  min-height: 80vh;
+  color: #333;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Estilos para los títulos con diferentes colores */
+.detail-container h2 {
+  color: #0056b3;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.detail-container h3 {
+  color: #007bff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.detail-container h4 {
+  color: #28a745;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+/* Imagen del reporte */
+.detail-container img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #007bff;
+  margin: 15px 0;
+}
+
+/* Fecha y descripción con mejor diseño */
+.detail-container p {
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* Botones con diseño uniforme */
+.detail-container button {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.detail-container button:first-of-type {
+  background: #dc3545;
+  color: white;
+}
+
+.detail-container button:first-of-type:hover {
+  background: #c82333;
+}
+
+.detail-container button:last-of-type {
+  background: #007bff;
+  color: white;
+}
+
+.detail-container button:last-of-type:hover {
+  background: #0056b3;
+}

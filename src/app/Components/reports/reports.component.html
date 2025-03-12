@@ -1,0 +1,17 @@
+<div class="reports-container">
+  <div class="search-container">
+    <input type="text" placeholder="Buscar por departamento" [(ngModel)]="searchTerm" (input)="filterReports()" />
+  </div>
+
+  <div *ngIf="filteredReports.length === 0" class="no-reports">
+    📌 No hay reportes disponibles.
+  </div>
+  
+  <div *ngFor="let report of filteredReports" class="report-card">
+    <img [src]="report.image" alt="Report Image">
+    <h3>{{ report.title }}</h3>
+    <p>{{ report.date }}</p>
+    <p><strong>Departamento:</strong> {{ report.departamento }}</p>
+    <button (click)="viewDetails(report.id)">👁 Ver Detalles</button>
+  </div>
+</div>

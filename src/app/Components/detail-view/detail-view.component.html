@@ -1,0 +1,12 @@
+<div class="detail-container">
+    <h2>{{ report.title }}</h2>
+    <h3>{{ report.departamento }}</h3>
+    <h4>{{report.author}}</h4>
+    <img [src]="report.image" alt="Report Image">
+    <p><strong>Fecha:</strong> {{ report.date }}</p>
+    <p>{{ report.description }}</p>
+  
+    <button (click)="deleteReport()">🗑 Eliminar Reporte</button>
+    <button (click)="back()">🔙 Regresar</button>
+  </div>
+  
